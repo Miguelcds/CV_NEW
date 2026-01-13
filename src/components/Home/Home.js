@@ -9,7 +9,7 @@ const aboutMe = (data) => {
   section.innerHTML += `
     <div class="block">
       <h2 class="section-title">Hello!</h2>
-      <p class="text">${data.aboutMe_English}</p>
+      <p class="text">${data.aboutMe}</p>
     </div>
   `;
 };
@@ -33,8 +33,9 @@ const education = (data) => {
         <p>${el.degree}</p>
         <p>${el.university}</p>
         <p>${el.graduationYear}</p>
-        <p>${el.honors}</p>
+        <p><strong>Donde Desarrolle Habilidades:</strong></p>
         <p>${el.relevantCourses}</p>
+        
       </li>
     `;
   }
@@ -47,18 +48,18 @@ const workExperience = (data) => {
   section.innerHTML += `
     <div class="block">
       <h3>Experience</h3>
-      <ul class="list"></ul>
+      <ul class="list2"></ul>
     </div>
   `;
 
-  const ul = section.querySelector(".list:last-of-type");
+  const ul = section.querySelector(".list2");
 
   for (const el of data.workExperience) {
     ul.innerHTML += `
       <li class="card">
         <p>${el.position}</p>
         <p>${el.company}</p>
-        <p>${el.startDate}</p>
+        <p>${el.startDate} - ${el.endDate}</p>
         <p>${el.description}</p>
       </li>
     `;
