@@ -72,7 +72,7 @@ const data = {
       title: "CSS Showcase",
       description:
         "Proyecto enfocado en CSS moderno con layouts responsive, animaciones y componentes reutilizables utilizando Flexbox y Grid.",
-      link: "https://css-j-costa.netlify.app/",
+      link: "https://css-project-jcosta.netlify.app/",
       image: "./project1.avif",
     },
     {
